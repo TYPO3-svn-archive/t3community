@@ -6,7 +6,23 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="tx_t3community_domain_model_"></label>
+			<label index="tx_t3community_domain_model_profile">Enthält Profiel Daten</label>
+			<label index="tx_t3community_domain_model_profile.profielvalue">profielvalue</label>
+			<label index="tx_t3community_domain_model_profile.trust">trust</label>
+			<label index="tx_t3community_domain_model_profile.profielwertart">profielwertart</label>
+			<label index="tx_t3community_domain_model_frontenduser">FrontendUser</label>
+			<label index="tx_t3community_domain_model_frontenduser.profiel">Profiel</label>
+			<label index="tx_t3community_domain_model_frontenduser.friends_list">FriendsList</label>
+			<label index="tx_t3community_domain_model_profiletemplates">Enthätl die Vorlage Welche Daten erhoben werden soll </label>
+			<label index="tx_t3community_domain_model_profiletemplates.text">text</label>
+			<label index="tx_t3community_domain_model_frontendusergroup">FrontendUserGroup</label>
+			<label index="tx_t3community_domain_model_friendslist">FriendsList</label>
+			<label index="tx_t3community_domain_model_friendslist.friend">friend</label>
+			<label index="tx_t3community_domain_model_friendslist.request">request</label>
+			<label index="tx_t3community_domain_model_friendslist.initiation">initiation</label>
+			<label index="tx_t3community_domain_model_friendslist.blacklist">blacklist</label>
+			<label index="tx_t3community_domain_model_friendslist.allowprofiledata">allowprofiledata</label>
+			<label index="tx_t3community_domain_model_friendslist.user">user</label>
 		</languageKey>
 	</data>
 </T3locallang>
