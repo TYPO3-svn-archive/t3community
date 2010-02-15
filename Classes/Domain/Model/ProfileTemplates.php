@@ -37,11 +37,36 @@
 class Tx_T3community_Domain_Model_ProfileTemplates extends Tx_Extbase_DomainObject_AbstractEntity {
 	
 	/**
-	 * text
+	 * profilwertart
 	 * @var string
 	 * @validate NotEmpty
 	 */
-	protected $text;
+	protected $profilwertart;
+	
+	/**
+	 * feldtype
+	 * @var string
+	 */
+	protected $feldtype;
+	
+	/**
+	 * validation
+	 * @var string
+	 */
+	protected $validation;
+	
+	/**
+	 * cssid
+	 * @var string
+	 */
+	protected $cssid;
+	
+	/**
+	 * innertag
+	 * @var string
+	 * @validate NotEmpty
+	 */
+	protected $innertag;
 	
 
 	/**
@@ -52,22 +77,98 @@ class Tx_T3community_Domain_Model_ProfileTemplates extends Tx_Extbase_DomainObje
 	}
 	
 	/**
-	 * Getter for text
+	 * Getter for profilwertart
 	 *
-	 * @return string text
+	 * @return string profilwertart
 	 */
-	public function getText() {
-		return $this->text;
+	public function getProfilwertart() {
+		return $this->profilwertart;
 	}
 
 	/**
-	 * Setter for text
+	 * Setter for profilwertart
 	 *
-	 * @param string $text text
+	 * @param string $profilwertart profilwertart
 	 * @return void
 	 */
-	public function setText($text) {
-		$this->text = $text;
+	public function setProfilwertart($profilwertart) {
+		$this->profilwertart = $profilwertart;
+	}
+	
+	/**
+	 * Getter for feldtype
+	 *
+	 * @return string feldtype
+	 */
+	public function getFeldtype() {
+		return $this->feldtype;
+	}
+
+	/**
+	 * Setter for feldtype
+	 *
+	 * @param string $feldtype feldtype
+	 * @return void
+	 */
+	public function setFeldtype($feldtype) {
+		$this->feldtype = $feldtype;
+	}
+	
+	/**
+	 * Getter for validation
+	 *
+	 * @return string validation
+	 */
+	public function getValidation() {
+		return $this->validation;
+	}
+
+	/**
+	 * Setter for validation
+	 *
+	 * @param string $validation validation
+	 * @return void
+	 */
+	public function setValidation($validation) {
+		$this->validation = $validation;
+	}
+	
+	/**
+	 * Getter for cssid
+	 *
+	 * @return string cssid
+	 */
+	public function getCssid() {
+		return $this->cssid;
+	}
+
+	/**
+	 * Setter for cssid
+	 *
+	 * @param string $cssid cssid
+	 * @return void
+	 */
+	public function setCssid($cssid) {
+		$this->cssid = $cssid;
+	}
+	
+	/**
+	 * Getter for innertag
+	 *
+	 * @return string innertag
+	 */
+	public function getInnertag() {
+		return $this->innertag;
+	}
+
+	/**
+	 * Setter for innertag
+	 *
+	 * @param string $innertag innertag
+	 * @return void
+	 */
+	public function setInnertag($innertag) {
+		$this->innertag = $innertag;
 	}
 	
 }

@@ -57,7 +57,7 @@ t3lib_extMgm::allowTableOnStandardPages('tx_t3community_domain_model_profiletemp
 $TCA['tx_t3community_domain_model_profiletemplates'] = array (
 	'ctrl' => array (
 		'title'             => 'ProfileTemplates', //'LLL:EXT:blog_example/Resources/Private/Language/locallang_db.xml:tx_blogexample_domain_model_blog', // TODO
-		'label' 			=> 'text',
+		'label' 			=> 'profilwertart',
 		'tstamp' 			=> 'tstamp',
 		'crdate' 			=> 'crdate',
 		'versioningWS' 		=> 2,
@@ -80,7 +80,7 @@ t3lib_extMgm::allowTableOnStandardPages('tx_t3community_domain_model_frontenduse
 $TCA['tx_t3community_domain_model_frontendusergroup'] = array (
 	'ctrl' => array (
 		'title'             => 'FrontendUserGroup', //'LLL:EXT:blog_example/Resources/Private/Language/locallang_db.xml:tx_blogexample_domain_model_blog', // TODO
-		'label' 			=> 'uid',
+		'label' 			=> '',
 		'tstamp' 			=> 'tstamp',
 		'crdate' 			=> 'crdate',
 		'versioningWS' 		=> 2,

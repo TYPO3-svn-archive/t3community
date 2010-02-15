@@ -1,11 +1,8 @@
-<?php
-
+﻿<?php
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2010 Gordon Brüggemann <gordon.brueggemann@tudock.de>, TUDOCK Pahlmann & Wolf GbR
-*  			Felix Krüger <felix.krueger@tudock.de>, TUDOCK Pahlmann & Wolf GbR
-*  			
+*  (c)  TODO - INSERT COPYRIGHT
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -26,49 +23,12 @@
 ***************************************************************/
 
 /**
- * FrontendUserGroup
+ * Repository for Tx_T3community_Domain_Model_FriendsList
  *
  * @version $Id$
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-
-
-class Tx_T3community_Domain_Model_FrontendUserGroup extends Tx_Extbase_DomainObject_AbstractEntity {
-	
-	/**
-	 * 
-	 * @var string
-	 * @validate NotEmpty
-	 */
-	protected $;
-	
-
-	/**
-	 * Constructor. Initializes all Tx_Extbase_Persistence_ObjectStorage instances.
-	 */
-	public function __construct() {
-		
-	}
-	
-	/**
-	 * Getter for 
-	 *
-	 * @return string 
-	 */
-	public function get() {
-		return $this->;
-	}
-
-	/**
-	 * Setter for 
-	 *
-	 * @param string $ 
-	 * @return void
-	 */
-	public function set($) {
-		$this-> = $;
-	}
-	
+class Tx_T3community_Domain_Repository_FriendsListRepository extends Tx_Extbase_Persistence_Repository {
 }
 ?>

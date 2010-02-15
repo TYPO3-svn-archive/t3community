@@ -9,7 +9,7 @@ CREATE TABLE tx_t3community_domain_model_profile (
 	
 	profielvalue tinytext,
 	trust int(11) DEFAULT '0' NOT NULL,
-	profielwertart int(11) unsigned DEFAULT '0'
+	profilewertart int(11) unsigned DEFAULT '0'
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
@@ -70,7 +70,11 @@ CREATE TABLE tx_t3community_domain_model_profiletemplates (
 	pid int(11) DEFAULT '0' NOT NULL,
 		
 	
-	text tinytext,
+	profilwertart tinytext,
+	feldtype tinytext,
+	validation tinytext,
+	cssid tinytext,
+	innertag tinytext,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
@@ -100,6 +104,7 @@ CREATE TABLE tx_t3community_domain_model_frontendusergroup (
 	pid int(11) DEFAULT '0' NOT NULL,
 		
 	
+	 tinytext,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
@@ -191,7 +196,17 @@ CREATE TABLE tx_t3community_profile_profiletemplates_mm (
 	
 		
 	
+		
+	
+		
+	
+		
+	
+		
+	
 
+	
+		
 	
 
 	

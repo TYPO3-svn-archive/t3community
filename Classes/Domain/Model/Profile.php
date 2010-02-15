@@ -51,10 +51,10 @@ class Tx_T3community_Domain_Model_Profile extends Tx_Extbase_DomainObject_Abstra
 	protected $trust;
 	
 	/**
-	 * profielwertart
+	 * profilewertart
 	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_ProfileTemplates>
 	 */
-	protected $profielwertart;
+	protected $profilewertart;
 	
 
 	/**
@@ -103,22 +103,22 @@ class Tx_T3community_Domain_Model_Profile extends Tx_Extbase_DomainObject_Abstra
 	}
 	
 	/**
-	 * Getter for profielwertart
+	 * Getter for profilewertart
 	 *
-	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_ProfileTemplates> profielwertart
+	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_ProfileTemplates> profilewertart
 	 */
-	public function getProfielwertart() {
-		return $this->profielwertart;
+	public function getProfilewertart() {
+		return $this->profilewertart;
 	}
 
 	/**
-	 * Setter for profielwertart
+	 * Setter for profilewertart
 	 *
-	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_ProfileTemplates> $profielwertart profielwertart
+	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_ProfileTemplates> $profilewertart profilewertart
 	 * @return void
 	 */
-	public function setProfielwertart(Tx_Extbase_Persistence_ObjectStorage $profielwertart) {
-		$this->profielwertart = $profielwertart;
+	public function setProfilewertart(Tx_Extbase_Persistence_ObjectStorage $profilewertart) {
+		$this->profilewertart = $profilewertart;
 	}
 	
 }

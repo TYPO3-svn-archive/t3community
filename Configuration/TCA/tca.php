@@ -7,10 +7,10 @@ if (!defined ('TYPO3_MODE')) 	die ('Access denied.');
 $TCA['tx_t3community_domain_model_profile'] = array(
 	'ctrl' => $TCA['tx_t3community_domain_model_profile']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'profielvalue,trust,profielwertart'
+		'showRecordFieldList' => 'profielvalue,trust,profilewertart'
 	),
 	'types' => array(
-		'1' => array('showitem' => 'profielvalue,trust,profielwertart')
+		'1' => array('showitem' => 'profielvalue,trust,profilewertart')
 	),
 	'palettes' => array(
 		'1' => array('showitem' => '')
@@ -83,9 +83,9 @@ $TCA['tx_t3community_domain_model_profile'] = array(
 			)
 		),
 		
-		'profielwertart' => array(
+		'profilewertart' => array(
 			'exclude' => 0,
-			'label'   => 'LLL:EXT:t3community/Resources/Private/Language/locallang_db.xml:tx_t3community_domain_model_profile.profielwertart',
+			'label'   => 'LLL:EXT:t3community/Resources/Private/Language/locallang_db.xml:tx_t3community_domain_model_profile.profilewertart',
 			'config'  => array(
 				'type' => 'select',
 				'size' => 10,
@@ -206,10 +206,10 @@ $TCA['tx_t3community_domain_model_frontenduser'] = array(
 $TCA['tx_t3community_domain_model_profiletemplates'] = array(
 	'ctrl' => $TCA['tx_t3community_domain_model_profiletemplates']['ctrl'],
 	'interface' => array(
-		'showRecordFieldList' => 'text'
+		'showRecordFieldList' => 'profilwertart,feldtype,validation,cssid,innertag'
 	),
 	'types' => array(
-		'1' => array('showitem' => 'text')
+		'1' => array('showitem' => 'profilwertart,feldtype,validation,cssid,innertag')
 	),
 	'palettes' => array(
 		'1' => array('showitem' => '')
@@ -262,9 +262,49 @@ $TCA['tx_t3community_domain_model_profiletemplates'] = array(
 			)
 		),
 		
-		'text' => array(
+		'profilwertart' => array(
 			'exclude' => 0,
-			'label'   => 'LLL:EXT:t3community/Resources/Private/Language/locallang_db.xml:tx_t3community_domain_model_profiletemplates.text',
+			'label'   => 'LLL:EXT:t3community/Resources/Private/Language/locallang_db.xml:tx_t3community_domain_model_profiletemplates.profilwertart',
+			'config'  => array(
+				'type' => 'input',
+				'size' => 30,
+				'eval' => 'trim,required'
+			)
+		),
+		
+		'feldtype' => array(
+			'exclude' => 0,
+			'label'   => 'LLL:EXT:t3community/Resources/Private/Language/locallang_db.xml:tx_t3community_domain_model_profiletemplates.feldtype',
+			'config'  => array(
+				'type' => 'input',
+				'size' => 30,
+				'eval' => 'trim'
+			)
+		),
+		
+		'validation' => array(
+			'exclude' => 0,
+			'label'   => 'LLL:EXT:t3community/Resources/Private/Language/locallang_db.xml:tx_t3community_domain_model_profiletemplates.validation',
+			'config'  => array(
+				'type' => 'input',
+				'size' => 30,
+				'eval' => 'trim'
+			)
+		),
+		
+		'cssid' => array(
+			'exclude' => 0,
+			'label'   => 'LLL:EXT:t3community/Resources/Private/Language/locallang_db.xml:tx_t3community_domain_model_profiletemplates.cssid',
+			'config'  => array(
+				'type' => 'input',
+				'size' => 30,
+				'eval' => 'trim'
+			)
+		),
+		
+		'innertag' => array(
+			'exclude' => 0,
+			'label'   => 'LLL:EXT:t3community/Resources/Private/Language/locallang_db.xml:tx_t3community_domain_model_profiletemplates.innertag',
 			'config'  => array(
 				'type' => 'input',
 				'size' => 30,
@@ -332,6 +372,16 @@ $TCA['tx_t3community_domain_model_frontendusergroup'] = array(
 			'label'   => 'LLL:EXT:lang/locallang_general.xml:LGL.hidden',
 			'config'  => array(
 				'type' => 'check'
+			)
+		),
+		
+		'' => array(
+			'exclude' => 0,
+			'label'   => 'LLL:EXT:t3community/Resources/Private/Language/locallang_db.xml:tx_t3community_domain_model_frontendusergroup.',
+			'config'  => array(
+				'type' => 'input',
+				'size' => 30,
+				'eval' => 'trim,required'
 			)
 		),
 		
