@@ -32,93 +32,114 @@
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-
-
 class Tx_T3community_Domain_Model_Profile extends Tx_Extbase_DomainObject_AbstractValueObject {
 	
 	/**
-	 * profielvalue
+	 * Alle Daten Abhängig profilevaluelabel
 	 * @var string
 	 * @validate NotEmpty
 	 */
 	protected $profielvalue;
 	
 	/**
-	 * trust
-	 * @var integer
+	 * rechte vergabe öffentlich vertaulich
+	 * @var boolean
 	 * @validate NotEmpty
 	 */
 	protected $trust;
 	
 	/**
-	 * profilewertart
+	 * profilevaluelabel
 	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_ProfileTemplates>
 	 */
-	protected $profilewertart;
+	protected $profilevaluelabel;
 	
-
-	/**
-	 * Constructor. Initializes all Tx_Extbase_Persistence_ObjectStorage instances.
-	 */
-	public function __construct() {
-		
-	}
 	
-	/**
-	 * Getter for profielvalue
-	 *
-	 * @return string profielvalue
-	 */
-	public function getProfielvalue() {
-		return $this->profielvalue;
-	}
-
+	
 	/**
 	 * Setter for profielvalue
 	 *
-	 * @param string $profielvalue profielvalue
+	 * @param string $profielvalue Alle Daten Abhängig profilevaluelabel
 	 * @return void
 	 */
 	public function setProfielvalue($profielvalue) {
 		$this->profielvalue = $profielvalue;
 	}
-	
-	/**
-	 * Getter for trust
-	 *
-	 * @return integer trust
-	 */
-	public function getTrust() {
-		return $this->trust;
-	}
 
+	/**
+	 * Getter for profielvalue
+	 *
+	 * @return string Alle Daten Abhängig profilevaluelabel
+	 */
+	public function getProfielvalue() {
+		return $this->profielvalue;
+	}
+	
 	/**
 	 * Setter for trust
 	 *
-	 * @param integer $trust trust
+	 * @param boolean $trust rechte vergabe öffentlich vertaulich
 	 * @return void
 	 */
 	public function setTrust($trust) {
 		$this->trust = $trust;
 	}
+
+	/**
+	 * Getter for trust
+	 *
+	 * @return boolean rechte vergabe öffentlich vertaulich
+	 */
+	public function getTrust() {
+		return $this->trust;
+	}
 	
 	/**
-	 * Getter for profilewertart
+	 * Returns the boolean state of trust
 	 *
-	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_ProfileTemplates> profilewertart
+	 * @return bool The state of trust
 	 */
-	public function getProfilewertart() {
-		return $this->profilewertart;
+	public function isTrust() {
+		$this->getTrust();
+	}
+	
+	/**
+	 * Setter for profilevaluelabel
+	 *
+	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_ProfileTemplates> $profilevaluelabel profilevaluelabel
+	 * @return void
+	 */
+	public function setProfilevaluelabel(Tx_Extbase_Persistence_ObjectStorage $profilevaluelabel) {
+		$this->profilevaluelabel = $profilevaluelabel;
 	}
 
 	/**
-	 * Setter for profilewertart
+	 * Getter for profilevaluelabel
 	 *
-	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_ProfileTemplates> $profilewertart profilewertart
+	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_ProfileTemplates> profilevaluelabel
+	 */
+	public function getProfilevaluelabel() {
+		return $this->profilevaluelabel;
+	}
+	
+	/**
+	 * Adds a ProfileTemplates
+	 *
+	 * @param Tx_T3community_Domain_Model_ProfileTemplates The ProfileTemplates to be added
 	 * @return void
 	 */
-	public function setProfilewertart(Tx_Extbase_Persistence_ObjectStorage $profilewertart) {
-		$this->profilewertart = $profilewertart;
+	public function addProfilevaluelabel(Tx_T3community_Domain_Model_ProfileTemplates $profilevaluelabel) {
+		$this->profilevaluelabel->attach($profilevaluelabel);
+	}
+	
+	/**
+	 * Removes a ProfileTemplates
+	 *
+	 * @param Tx_T3community_Domain_Model_ProfileTemplates The ProfileTemplates to be removed
+	 * @return void
+	 */
+	public function removeProfilevaluelabel(Tx_T3community_Domain_Model_ProfileTemplates $profilevaluelabel) {
+		$this->profilevaluelabel->detach($profilevaluelabel);
 	}
 	
 }

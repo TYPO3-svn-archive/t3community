@@ -26,14 +26,12 @@
 ***************************************************************/
 
 /**
- * FrontendUser
+ * fe_users
  *
  * @version $Id$
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-
-
 class Tx_T3community_Domain_Model_FrontendUser extends Tx_Extbase_DomainObject_AbstractEntity {
 	
 	/**
@@ -48,7 +46,12 @@ class Tx_T3community_Domain_Model_FrontendUser extends Tx_Extbase_DomainObject_A
 	 */
 	protected $FriendsList;
 	
-
+	/**
+	 * Guestbook
+	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_Guestbook>
+	 */
+	protected $Guestbook;
+	
 	/**
 	 * Constructor. Initializes all Tx_Extbase_Persistence_ObjectStorage instances.
 	 */
@@ -56,17 +59,10 @@ class Tx_T3community_Domain_Model_FrontendUser extends Tx_Extbase_DomainObject_A
 		$this->Profiel = new Tx_Extbase_Persistence_ObjectStorage();
 		
 		$this->FriendsList = new Tx_Extbase_Persistence_ObjectStorage();
+		
+		$this->Guestbook = new Tx_Extbase_Persistence_ObjectStorage();
 	}
 	
-	/**
-	 * Getter for Profiel
-	 *
-	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_Profile> Profiel
-	 */
-	public function getProfiel() {
-		return $this->Profiel;
-	}
-
 	/**
 	 * Setter for Profiel
 	 *
@@ -76,12 +72,20 @@ class Tx_T3community_Domain_Model_FrontendUser extends Tx_Extbase_DomainObject_A
 	public function setProfiel(Tx_Extbase_Persistence_ObjectStorage $Profiel) {
 		$this->Profiel = $Profiel;
 	}
-	
-	// TODO: ADD the "add"-method for the "ManyToMany" Relation as well
+
 	/**
-	 * Add a Profile
+	 * Getter for Profiel
 	 *
-	 * @param Tx_T3community_Domain_Model_Profile The Profile to add
+	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_Profile> Profiel
+	 */
+	public function getProfiel() {
+		return $this->Profiel;
+	}
+	
+	/**
+	 * Adds a Profile
+	 *
+	 * @param Tx_T3community_Domain_Model_Profile The Profile to be added
 	 * @return void
 	 */
 	public function addProfiel(Tx_T3community_Domain_Model_Profile $Profiel) {
@@ -89,14 +93,15 @@ class Tx_T3community_Domain_Model_FrontendUser extends Tx_Extbase_DomainObject_A
 	}
 	
 	/**
-	 * Getter for FriendsList
+	 * Removes a Profile
 	 *
-	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_FriendsList> FriendsList
+	 * @param Tx_T3community_Domain_Model_Profile The Profile to be removed
+	 * @return void
 	 */
-	public function getFriendsList() {
-		return $this->FriendsList;
+	public function removeProfiel(Tx_T3community_Domain_Model_Profile $Profiel) {
+		$this->Profiel->detach($Profiel);
 	}
-
+	
 	/**
 	 * Setter for FriendsList
 	 *
@@ -106,16 +111,73 @@ class Tx_T3community_Domain_Model_FrontendUser extends Tx_Extbase_DomainObject_A
 	public function setFriendsList(Tx_Extbase_Persistence_ObjectStorage $FriendsList) {
 		$this->FriendsList = $FriendsList;
 	}
-	
-	// TODO: ADD the "add"-method for the "ManyToMany" Relation as well
+
 	/**
-	 * Add a FriendsList
+	 * Getter for FriendsList
 	 *
-	 * @param Tx_T3community_Domain_Model_FriendsList The FriendsList to add
+	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_FriendsList> FriendsList
+	 */
+	public function getFriendsList() {
+		return $this->FriendsList;
+	}
+	
+	/**
+	 * Adds a FriendsList
+	 *
+	 * @param Tx_T3community_Domain_Model_FriendsList The FriendsList to be added
 	 * @return void
 	 */
 	public function addFriendsList(Tx_T3community_Domain_Model_FriendsList $FriendsList) {
 		$this->FriendsList->attach($FriendsList);
+	}
+	
+	/**
+	 * Removes a FriendsList
+	 *
+	 * @param Tx_T3community_Domain_Model_FriendsList The FriendsList to be removed
+	 * @return void
+	 */
+	public function removeFriendsList(Tx_T3community_Domain_Model_FriendsList $FriendsList) {
+		$this->FriendsList->detach($FriendsList);
+	}
+	
+	/**
+	 * Setter for Guestbook
+	 *
+	 * @param Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_Guestbook> $Guestbook Guestbook
+	 * @return void
+	 */
+	public function setGuestbook(Tx_Extbase_Persistence_ObjectStorage $Guestbook) {
+		$this->Guestbook = $Guestbook;
+	}
+
+	/**
+	 * Getter for Guestbook
+	 *
+	 * @return Tx_Extbase_Persistence_ObjectStorage<Tx_T3community_Domain_Model_Guestbook> Guestbook
+	 */
+	public function getGuestbook() {
+		return $this->Guestbook;
+	}
+	
+	/**
+	 * Adds a Guestbook
+	 *
+	 * @param Tx_T3community_Domain_Model_Guestbook The Guestbook to be added
+	 * @return void
+	 */
+	public function addGuestbook(Tx_T3community_Domain_Model_Guestbook $Guestbook) {
+		$this->Guestbook->attach($Guestbook);
+	}
+	
+	/**
+	 * Removes a Guestbook
+	 *
+	 * @param Tx_T3community_Domain_Model_Guestbook The Guestbook to be removed
+	 * @return void
+	 */
+	public function removeGuestbook(Tx_T3community_Domain_Model_Guestbook $Guestbook) {
+		$this->Guestbook->detach($Guestbook);
 	}
 	
 }

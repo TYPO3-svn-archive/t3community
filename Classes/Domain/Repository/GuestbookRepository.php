@@ -23,12 +23,12 @@
 ***************************************************************/
 
 /**
- * Repository for Tx_T3community_Domain_Model_FriendsList
+ * Repository for Tx_T3community_Domain_Model_Guestbook
  *
  * @version $Id$
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-class Tx_T3community_Domain_Repository_FriendsListRepository extends Tx_Extbase_Persistence_Repository {
+class Tx_T3community_Domain_Repository_GuestbookRepository extends Tx_Extbase_Persistence_Repository {
 }
 ?>

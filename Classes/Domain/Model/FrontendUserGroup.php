@@ -32,43 +32,9 @@
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-
-
 class Tx_T3community_Domain_Model_FrontendUserGroup extends Tx_Extbase_DomainObject_AbstractEntity {
 	
-	/**
-	 * 
-	 * @var string
-	 * @validate NotEmpty
-	 */
-	protected $;
 	
-
-	/**
-	 * Constructor. Initializes all Tx_Extbase_Persistence_ObjectStorage instances.
-	 */
-	public function __construct() {
-		
-	}
-	
-	/**
-	 * Getter for 
-	 *
-	 * @return string 
-	 */
-	public function get() {
-		return $this->;
-	}
-
-	/**
-	 * Setter for 
-	 *
-	 * @param string $ 
-	 * @return void
-	 */
-	public function set($) {
-		$this-> = $;
-	}
 	
 }
 ?>

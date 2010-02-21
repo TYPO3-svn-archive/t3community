@@ -32,19 +32,17 @@
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-
-
 class Tx_T3community_Domain_Model_ProfileTemplates extends Tx_Extbase_DomainObject_AbstractEntity {
 	
 	/**
-	 * profilwertart
+	 * Name Titel Label
 	 * @var string
 	 * @validate NotEmpty
 	 */
 	protected $profilwertart;
 	
 	/**
-	 * feldtype
+	 * input type select
 	 * @var string
 	 */
 	protected $feldtype;
@@ -64,65 +62,49 @@ class Tx_T3community_Domain_Model_ProfileTemplates extends Tx_Extbase_DomainObje
 	/**
 	 * innertag
 	 * @var string
-	 * @validate NotEmpty
 	 */
 	protected $innertag;
 	
-
-	/**
-	 * Constructor. Initializes all Tx_Extbase_Persistence_ObjectStorage instances.
-	 */
-	public function __construct() {
-		
-	}
 	
-	/**
-	 * Getter for profilwertart
-	 *
-	 * @return string profilwertart
-	 */
-	public function getProfilwertart() {
-		return $this->profilwertart;
-	}
-
+	
 	/**
 	 * Setter for profilwertart
 	 *
-	 * @param string $profilwertart profilwertart
+	 * @param string $profilwertart Name Titel Label
 	 * @return void
 	 */
 	public function setProfilwertart($profilwertart) {
 		$this->profilwertart = $profilwertart;
 	}
-	
-	/**
-	 * Getter for feldtype
-	 *
-	 * @return string feldtype
-	 */
-	public function getFeldtype() {
-		return $this->feldtype;
-	}
 
+	/**
+	 * Getter for profilwertart
+	 *
+	 * @return string Name Titel Label
+	 */
+	public function getProfilwertart() {
+		return $this->profilwertart;
+	}
+	
 	/**
 	 * Setter for feldtype
 	 *
-	 * @param string $feldtype feldtype
+	 * @param string $feldtype input type select
 	 * @return void
 	 */
 	public function setFeldtype($feldtype) {
 		$this->feldtype = $feldtype;
 	}
-	
-	/**
-	 * Getter for validation
-	 *
-	 * @return string validation
-	 */
-	public function getValidation() {
-		return $this->validation;
-	}
 
+	/**
+	 * Getter for feldtype
+	 *
+	 * @return string input type select
+	 */
+	public function getFeldtype() {
+		return $this->feldtype;
+	}
+	
 	/**
 	 * Setter for validation
 	 *
@@ -132,16 +114,16 @@ class Tx_T3community_Domain_Model_ProfileTemplates extends Tx_Extbase_DomainObje
 	public function setValidation($validation) {
 		$this->validation = $validation;
 	}
-	
-	/**
-	 * Getter for cssid
-	 *
-	 * @return string cssid
-	 */
-	public function getCssid() {
-		return $this->cssid;
-	}
 
+	/**
+	 * Getter for validation
+	 *
+	 * @return string validation
+	 */
+	public function getValidation() {
+		return $this->validation;
+	}
+	
 	/**
 	 * Setter for cssid
 	 *
@@ -151,16 +133,16 @@ class Tx_T3community_Domain_Model_ProfileTemplates extends Tx_Extbase_DomainObje
 	public function setCssid($cssid) {
 		$this->cssid = $cssid;
 	}
-	
-	/**
-	 * Getter for innertag
-	 *
-	 * @return string innertag
-	 */
-	public function getInnertag() {
-		return $this->innertag;
-	}
 
+	/**
+	 * Getter for cssid
+	 *
+	 * @return string cssid
+	 */
+	public function getCssid() {
+		return $this->cssid;
+	}
+	
 	/**
 	 * Setter for innertag
 	 *
@@ -169,6 +151,15 @@ class Tx_T3community_Domain_Model_ProfileTemplates extends Tx_Extbase_DomainObje
 	 */
 	public function setInnertag($innertag) {
 		$this->innertag = $innertag;
+	}
+
+	/**
+	 * Getter for innertag
+	 *
+	 * @return string innertag
+	 */
+	public function getInnertag() {
+		return $this->innertag;
 	}
 	
 }

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 /***************************************************************
 *  Copyright notice
@@ -33,8 +33,8 @@
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
 
-
-class Tx_T3community_Controller_ProfileTemplatesController extends Tx_Extbase_MVC_Controller_ActionController {
+// TODO: As your extension matures, you should use Tx_Extbase_MVC_Controller_ActionController as base class, instead of the ScaffoldingController used below.
+class Tx_T3community_Controller_ProfileTemplatesController extends Tx_ExtbaseKickstarter_Scaffolding_AbstractScaffoldingController {
 	
 	
 	/**

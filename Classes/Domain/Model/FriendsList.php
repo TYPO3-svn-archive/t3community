@@ -32,36 +32,34 @@
  * @copyright Copyright belongs to the respective authors
  * @license http://www.gnu.org/licenses/gpl.html GNU General Public License, version 3 or later
  */
-
-
 class Tx_T3community_Domain_Model_FriendsList extends Tx_Extbase_DomainObject_AbstractValueObject {
 	
 	/**
-	 * friend
+	 * wir sind Freunde
 	 * @var boolean
 	 */
 	protected $friend;
 	
 	/**
-	 * request
+	 * Ich möchte ihn o. sie als Freund
 	 * @var boolean
 	 */
 	protected $request;
 	
 	/**
-	 * initiation
+	 * er o. sie wuenscht mich als Freund
 	 * @var boolean
 	 */
 	protected $initiation;
 	
 	/**
-	 * blacklist
+	 * möchte keine Ahnfrage mehr von ihm o.ihr
 	 * @var boolean
 	 */
 	protected $blacklist;
 	
 	/**
-	 * allowprofiledata
+	 * darf folgende Daten sehen
 	 * @var string
 	 */
 	protected $allowprofiledata;
@@ -72,118 +70,139 @@ class Tx_T3community_Domain_Model_FriendsList extends Tx_Extbase_DomainObject_Ab
 	 */
 	protected $user;
 	
-
-	/**
-	 * Constructor. Initializes all Tx_Extbase_Persistence_ObjectStorage instances.
-	 */
-	public function __construct() {
-		
-	}
 	
-	/**
-	 * Getter for friend
-	 *
-	 * @return boolean friend
-	 */
-	public function getFriend() {
-		return $this->friend;
-	}
-
+	
 	/**
 	 * Setter for friend
 	 *
-	 * @param boolean $friend friend
+	 * @param boolean $friend wir sind Freunde
 	 * @return void
 	 */
 	public function setFriend($friend) {
 		$this->friend = $friend;
 	}
+
+	/**
+	 * Getter for friend
+	 *
+	 * @return boolean wir sind Freunde
+	 */
+	public function getFriend() {
+		return $this->friend;
+	}
 	
 	/**
-	 * Getter for request
+	 * Returns the boolean state of friend
 	 *
-	 * @return boolean request
+	 * @return bool The state of friend
 	 */
-	public function getRequest() {
-		return $this->request;
+	public function isFriend() {
+		$this->getFriend();
 	}
-
+	
 	/**
 	 * Setter for request
 	 *
-	 * @param boolean $request request
+	 * @param boolean $request Ich möchte ihn o. sie als Freund
 	 * @return void
 	 */
 	public function setRequest($request) {
 		$this->request = $request;
 	}
+
+	/**
+	 * Getter for request
+	 *
+	 * @return boolean Ich möchte ihn o. sie als Freund
+	 */
+	public function getRequest() {
+		return $this->request;
+	}
 	
 	/**
-	 * Getter for initiation
+	 * Returns the boolean state of request
 	 *
-	 * @return boolean initiation
+	 * @return bool The state of request
 	 */
-	public function getInitiation() {
-		return $this->initiation;
+	public function isRequest() {
+		$this->getRequest();
 	}
-
+	
 	/**
 	 * Setter for initiation
 	 *
-	 * @param boolean $initiation initiation
+	 * @param boolean $initiation er o. sie wuenscht mich als Freund
 	 * @return void
 	 */
 	public function setInitiation($initiation) {
 		$this->initiation = $initiation;
 	}
+
+	/**
+	 * Getter for initiation
+	 *
+	 * @return boolean er o. sie wuenscht mich als Freund
+	 */
+	public function getInitiation() {
+		return $this->initiation;
+	}
 	
 	/**
-	 * Getter for blacklist
+	 * Returns the boolean state of initiation
 	 *
-	 * @return boolean blacklist
+	 * @return bool The state of initiation
 	 */
-	public function getBlacklist() {
-		return $this->blacklist;
+	public function isInitiation() {
+		$this->getInitiation();
 	}
-
+	
 	/**
 	 * Setter for blacklist
 	 *
-	 * @param boolean $blacklist blacklist
+	 * @param boolean $blacklist möchte keine Ahnfrage mehr von ihm o.ihr
 	 * @return void
 	 */
 	public function setBlacklist($blacklist) {
 		$this->blacklist = $blacklist;
 	}
+
+	/**
+	 * Getter for blacklist
+	 *
+	 * @return boolean möchte keine Ahnfrage mehr von ihm o.ihr
+	 */
+	public function getBlacklist() {
+		return $this->blacklist;
+	}
 	
 	/**
-	 * Getter for allowprofiledata
+	 * Returns the boolean state of blacklist
 	 *
-	 * @return string allowprofiledata
+	 * @return bool The state of blacklist
 	 */
-	public function getAllowprofiledata() {
-		return $this->allowprofiledata;
+	public function isBlacklist() {
+		$this->getBlacklist();
 	}
-
+	
 	/**
 	 * Setter for allowprofiledata
 	 *
-	 * @param string $allowprofiledata allowprofiledata
+	 * @param string $allowprofiledata darf folgende Daten sehen
 	 * @return void
 	 */
 	public function setAllowprofiledata($allowprofiledata) {
 		$this->allowprofiledata = $allowprofiledata;
 	}
-	
-	/**
-	 * Getter for user
-	 *
-	 * @return Tx_T3community_Domain_Model_FrontendUser user
-	 */
-	public function getUser() {
-		return $this->user;
-	}
 
+	/**
+	 * Getter for allowprofiledata
+	 *
+	 * @return string darf folgende Daten sehen
+	 */
+	public function getAllowprofiledata() {
+		return $this->allowprofiledata;
+	}
+	
 	/**
 	 * Setter for user
 	 *
@@ -192,6 +211,15 @@ class Tx_T3community_Domain_Model_FriendsList extends Tx_Extbase_DomainObject_Ab
 	 */
 	public function setUser(Tx_T3community_Domain_Model_FrontendUser $user) {
 		$this->user = $user;
+	}
+
+	/**
+	 * Getter for user
+	 *
+	 * @return Tx_T3community_Domain_Model_FrontendUser user
+	 */
+	public function getUser() {
+		return $this->user;
 	}
 	
 }

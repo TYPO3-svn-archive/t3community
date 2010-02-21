@@ -26,7 +26,7 @@
 ***************************************************************/
 
 /**
- * Controller for the FrontendUser object
+ * Controller for the Guestbook object
  *
  * @version $Id$
  * @copyright Copyright belongs to the respective authors
@@ -34,7 +34,7 @@
  */
 
 // TODO: As your extension matures, you should use Tx_Extbase_MVC_Controller_ActionController as base class, instead of the ScaffoldingController used below.
-class Tx_T3community_Controller_FrontendUserController extends Tx_ExtbaseKickstarter_Scaffolding_AbstractScaffoldingController {
+class Tx_T3community_Controller_GuestbookController extends Tx_ExtbaseKickstarter_Scaffolding_AbstractScaffoldingController {
 	
 	
 	/**
@@ -43,6 +43,14 @@ class Tx_T3community_Controller_FrontendUserController extends Tx_ExtbaseKicksta
 	 * @return string The rendered list action
 	 */
 	public function listAction() {
+	}
+	
+	/**
+	 * create action
+	 *
+	 * @return string The rendered create action
+	 */
+	public function createAction() {
 	}
 	
 	/**

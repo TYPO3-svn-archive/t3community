@@ -26,7 +26,7 @@
 ***************************************************************/
 
 /**
- * Controller for the FrontendUser object
+ * Controller for the Profile object
  *
  * @version $Id$
  * @copyright Copyright belongs to the respective authors
@@ -34,24 +34,8 @@
  */
 
 // TODO: As your extension matures, you should use Tx_Extbase_MVC_Controller_ActionController as base class, instead of the ScaffoldingController used below.
-class Tx_T3community_Controller_FrontendUserController extends Tx_ExtbaseKickstarter_Scaffolding_AbstractScaffoldingController {
+class Tx_T3community_Controller_ProfileController extends Tx_ExtbaseKickstarter_Scaffolding_AbstractScaffoldingController {
 	
-	
-	/**
-	 * list action
-	 *
-	 * @return string The rendered list action
-	 */
-	public function listAction() {
-	}
-	
-	/**
-	 * edit action
-	 *
-	 * @return string The rendered edit action
-	 */
-	public function editAction() {
-	}
 	
 }
 ?>
