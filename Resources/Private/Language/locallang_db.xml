@@ -6,28 +6,33 @@
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="tx_t3community_domain_model_profile">Enthält Profiel Daten</label>
-			<label index="tx_t3community_domain_model_profile.profielvalue">profielvalue</label>
-			<label index="tx_t3community_domain_model_profile.trust">trust</label>
-			<label index="tx_t3community_domain_model_profile.profilewertart">profilewertart</label>
-			<label index="tx_t3community_domain_model_frontenduser">FrontendUser</label>
+			<label index="tx_t3community_domain_model_profile">Profile</label>
+			<label index="tx_t3community_domain_model_profile.profielvalue">Profielvalue</label>
+			<label index="tx_t3community_domain_model_profile.trust">Trust</label>
+			<label index="tx_t3community_domain_model_profile.profilevaluelabel">Profilevaluelabel</label>
+			<label index="tx_t3community_domain_model_frontenduser">Frontend User</label>
 			<label index="tx_t3community_domain_model_frontenduser.profiel">Profiel</label>
-			<label index="tx_t3community_domain_model_frontenduser.friends_list">FriendsList</label>
-			<label index="tx_t3community_domain_model_profiletemplates">Enthätl die Vorlage Welche Daten erhoben werden soll </label>
-			<label index="tx_t3community_domain_model_profiletemplates.profilwertart">profilwertart</label>
-			<label index="tx_t3community_domain_model_profiletemplates.feldtype">feldtype</label>
-			<label index="tx_t3community_domain_model_profiletemplates.validation">validation</label>
-			<label index="tx_t3community_domain_model_profiletemplates.cssid">cssid</label>
-			<label index="tx_t3community_domain_model_profiletemplates.innertag">innertag</label>
-			<label index="tx_t3community_domain_model_frontendusergroup">FrontendUserGroup</label>
-			<label index="tx_t3community_domain_model_frontendusergroup."></label>
-			<label index="tx_t3community_domain_model_friendslist">FriendsList</label>
-			<label index="tx_t3community_domain_model_friendslist.friend">friend</label>
-			<label index="tx_t3community_domain_model_friendslist.request">request</label>
-			<label index="tx_t3community_domain_model_friendslist.initiation">initiation</label>
-			<label index="tx_t3community_domain_model_friendslist.blacklist">blacklist</label>
-			<label index="tx_t3community_domain_model_friendslist.allowprofiledata">allowprofiledata</label>
-			<label index="tx_t3community_domain_model_friendslist.user">user</label>
+			<label index="tx_t3community_domain_model_frontenduser.friends_list">Friends List</label>
+			<label index="tx_t3community_domain_model_frontenduser.guestbook">Guestbook</label>
+			<label index="tx_t3community_domain_model_profiletemplates">Profile Templates</label>
+			<label index="tx_t3community_domain_model_profiletemplates.profilwertart">Profilwertart</label>
+			<label index="tx_t3community_domain_model_profiletemplates.feldtype">Feldtype</label>
+			<label index="tx_t3community_domain_model_profiletemplates.validation">Validation</label>
+			<label index="tx_t3community_domain_model_profiletemplates.cssid">Cssid</label>
+			<label index="tx_t3community_domain_model_profiletemplates.innertag">Innertag</label>
+			<label index="tx_t3community_domain_model_frontendusergroup">Frontend User Group</label>
+			<label index="tx_t3community_domain_model_friendslist">Friends List</label>
+			<label index="tx_t3community_domain_model_friendslist.friend">Friend</label>
+			<label index="tx_t3community_domain_model_friendslist.request">Request</label>
+			<label index="tx_t3community_domain_model_friendslist.initiation">Initiation</label>
+			<label index="tx_t3community_domain_model_friendslist.blacklist">Blacklist</label>
+			<label index="tx_t3community_domain_model_friendslist.allowprofiledata">Allowprofiledata</label>
+			<label index="tx_t3community_domain_model_friendslist.user">User</label>
+			<label index="tx_t3community_domain_model_guestbook">Guestbook</label>
+			<label index="tx_t3community_domain_model_guestbook.text">Text</label>
+			<label index="tx_t3community_domain_model_guestbook.user">User</label>
+			<label index="tx_t3community_domain_model_messages">Messages</label>
+			<label index="tx_t3community_domain_model_messages.text">Text</label>
 		</languageKey>
 	</data>
 </T3locallang>

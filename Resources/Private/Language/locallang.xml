@@ -2,11 +2,37 @@
 <T3locallang>
 	<meta type="array">
 		<type>module</type>
-		<description>Language labels for the t3community extension</description>
+		<description>Language labels for the t3community extension in the FRONTEND</description>
 	</meta>
 	<data type="array">
 		<languageKey index="default" type="array">
-			<label index="sample">This is how you should store your labels.</label>
+			<label index="tx_t3community_domain_model_profile">Enthält Profiel Daten</label>
+			<label index="tx_t3community_domain_model_profile.profielvalue">Alle Daten Abhängig profilevaluelabel</label>
+			<label index="tx_t3community_domain_model_profile.trust">rechte vergabe öffentlich vertaulich</label>
+			<label index="tx_t3community_domain_model_profile.profilevaluelabel">profilevaluelabel</label>
+			<label index="tx_t3community_domain_model_frontenduser">fe_users</label>
+			<label index="tx_t3community_domain_model_frontenduser.profiel">Profiel</label>
+			<label index="tx_t3community_domain_model_frontenduser.friends_list">FriendsList</label>
+			<label index="tx_t3community_domain_model_frontenduser.guestbook">Guestbook</label>
+			<label index="tx_t3community_domain_model_profiletemplates">Enthätl die Vorlage Welche Daten erhoben werden soll </label>
+			<label index="tx_t3community_domain_model_profiletemplates.profilwertart">Name Titel Label</label>
+			<label index="tx_t3community_domain_model_profiletemplates.feldtype">input type select</label>
+			<label index="tx_t3community_domain_model_profiletemplates.validation">validation</label>
+			<label index="tx_t3community_domain_model_profiletemplates.cssid">cssid</label>
+			<label index="tx_t3community_domain_model_profiletemplates.innertag">innertag</label>
+			<label index="tx_t3community_domain_model_frontendusergroup">FrontendUserGroup</label>
+			<label index="tx_t3community_domain_model_friendslist">FriendsList</label>
+			<label index="tx_t3community_domain_model_friendslist.friend">wir sind Freunde</label>
+			<label index="tx_t3community_domain_model_friendslist.request">Ich möchte ihn o. sie als Freund</label>
+			<label index="tx_t3community_domain_model_friendslist.initiation">er o. sie wuenscht mich als Freund</label>
+			<label index="tx_t3community_domain_model_friendslist.blacklist">möchte keine Ahnfrage mehr von ihm o.ihr</label>
+			<label index="tx_t3community_domain_model_friendslist.allowprofiledata">darf folgende Daten sehen</label>
+			<label index="tx_t3community_domain_model_friendslist.user">user</label>
+			<label index="tx_t3community_domain_model_guestbook">Guestbook</label>
+			<label index="tx_t3community_domain_model_guestbook.text">text</label>
+			<label index="tx_t3community_domain_model_guestbook.user">user</label>
+			<label index="tx_t3community_domain_model_messages">Messages</label>
+			<label index="tx_t3community_domain_model_messages.text">text</label>
 		</languageKey>
 	</data>
 </T3locallang>

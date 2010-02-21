@@ -2,10 +2,10 @@
 
 
 
-<h1>Edit FrontendUser</h1>
+<h1>Edit Guestbook</h1>
 
 <!-- TODO: make this a partial -->
-<f:form.errors for="frontendUser">
+<f:form.errors for="guestbook">
 	<div class="error">
 		{error.message}
 		<f:if condition="{error.propertyName}">
@@ -19,10 +19,11 @@
 	</div>
 </f:form.errors>
 
-<f:form method="post" action="update" name="frontendUser" object="{frontendUser}">
+<f:form method="post" action="update" name="guestbook" object="{guestbook}">
 
 	
-
+	<label for="title"><f:translate key="tx_t3community_domain_model_guestbook.text" /> <span class="required">(required)</span></label><br />
+	<f:form.textbox property="text" /><br />
 	
 
 	

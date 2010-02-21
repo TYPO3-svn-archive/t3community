@@ -1,0 +1,25 @@
+
+
+
+
+<h1>Edit FrontendUserGroup</h1>
+
+<!-- TODO: make this a partial -->
+<f:form.errors for="frontendUserGroup">
+	<div class="error">
+		{error.message}
+		<f:if condition="{error.propertyName}">
+			<p>
+				<strong>{error.propertyName}</strong>:
+				<f:for each="{error.errors}" as="errorDetail">
+					{errorDetail.message}
+				</f:for>
+			</p>
+		</f:if>
+	</div>
+</f:form.errors>
+
+<f:form method="post" action="update" name="frontendUserGroup" object="{frontendUserGroup}">
+
+<f:form.submit value="Edit" />
+</f:form>
